@@ -2,43 +2,49 @@ import { useState } from "react";
 import { Briefcase, Code, User, Book, Heart } from "lucide-react";
 
 const aboutCards = [
+{
+    id: "about 1",
+    title: "Academic Prowess",
+    icon: <Book className="h-6 w-6 text-white" />,
+    shortDesc: "Consistently achieving top academic performance across engineering and science.",
+    longDesc:
+      "Through dedication and passion for learning, I’ve excelled academically with a 94% average earning my the Trek Excellence Scholarship and placing me on the Deans Scholar List. My academic success reflects not only strong analytical ability but also persistence, curiosity, and a drive to continuously push my understanding further.",
+    bgColor: "bg-emerald-600",
+  },
   {
-    id: 1,
+    id: "about 3",
+    title: "Teamwork & Volunteering",
+    icon: <Briefcase className="h-6 w-6 text-white" />,
+    shortDesc: "Collaborating on impactful projects and volunteering.",
+    longDesc:
+      "I thrive in team environments, where I’ve contributed through leadership and collaboration. In school, I volunteered on the Environmental Council, helping drive sustainability initiatives on campus. I’m now beginning to volunteer with SportAbility, supporting adaptive sports programs and fostering inclusivity in athletics. These experiences have strengthened my ability to mentor, coordinate projects, and contribute meaningfully to community-focused initiatives.",
+  bgColor: "bg-orange-600",
+    },
+];
+const interestsCards = [
+{
+    id: "interest 1",
     title: "Sustainable Engineering",
     icon: <Code className="h-6 w-6 text-white" />,
     shortDesc: "Exploring environmentally-conscious engineering solutions.",
     longDesc:
       "I focus on sustainable robotics and electronics, designing systems that minimize waste and energy consumption while maintaining high performance.",
-    bgColor: "bg-green-500",
+    bgColor: "bg-teal-600",
   },
   {
-    id: 2,
+    id: "interest 2",
     title: "Robotics & Electronics",
     icon: <User className="h-6 w-6 text-white" />,
     shortDesc: "Creating innovative robotic systems and circuits.",
     longDesc:
       "I love building hardware-software integrated projects, from custom sensors to autonomous robots, always thinking about efficiency and scalability.",
-    bgColor: "bg-blue-500",
+    bgColor: "bg-indigo-600",
   },
-  {
-    id: 3,
-    title: "Teamwork & Volunteering",
-    icon: <Briefcase className="h-6 w-6 text-white" />,
-    shortDesc: "Collaborating on impactful projects and volunteering.",
-    longDesc:
-      "I thrive in team environments, coordinating projects, mentoring peers, and contributing to community initiatives in STEM outreach.",
-    bgColor: "bg-purple-500",
-  },
-  {
-    id: 4,
-    title: "Data Analysis & Simulations",
-    icon: <Book className="h-6 w-6 text-white" />,
-    shortDesc: "Solving complex problems using data-driven methods.",
-    longDesc:
-      "I design simulations and perform data analysis to inform engineering decisions, from hydrological models to experimental research.",
-    bgColor: "bg-orange-500",
-  },
-];
+
+
+
+]
+
 
 const hobbiesCards = [
   {
@@ -48,7 +54,7 @@ const hobbiesCards = [
     shortDesc: "Training for endurance and personal growth.",
     longDesc:
       "I’ve completed multiple Ironman events and use running and cycling to push my limits physically and mentally.",
-    bgColor: "bg-red-500",
+    bgColor: "bg-amber-600",
   },
   {
     id: 2,
@@ -57,7 +63,7 @@ const hobbiesCards = [
     shortDesc: "Exploring topics from science to philosophy.",
     longDesc:
       "I enjoy reading books on physics, engineering, and human behavior, constantly expanding my perspective and applying it to my projects.",
-    bgColor: "bg-yellow-500",
+    bgColor: "bg-cyan-600",
   },
 ];
 
@@ -99,10 +105,17 @@ export const About = () => {
         </h2>
 
         <h3 className="text-2xl font-semibold mb-6 text-center text-foreground">
-          Professional & Academic Interests
+          Me
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {aboutCards.map(renderCard)}
+        </div>
+
+        <h3 className="text-2xl font-semibold mb-6 text-center text-foreground">
+          Academic Interests
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          {interestsCards.map(renderCard)}
         </div>
 
         <h3 className="text-2xl font-semibold mb-6 text-center text-foreground">
