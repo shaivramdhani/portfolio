@@ -53,7 +53,7 @@ const hobbiesCards = [
     icon: <Heart className="h-6 w-6 text-white" />,
     shortDesc: "Training for endurance and personal growth.",
     longDesc:
-      "I’ve completed multiple Ironman events and use running and cycling to push my limits physically and mentally.",
+      "Outside of academics, I enjoy pushing myself to my limits both physically and mentally.I compete in endurance events, having completed an Ironman 70.3 amidst many other cycling,running and swimming events. I also love playing soccer. ",
     bgColor: "bg-amber-600",
   },
   {
@@ -62,7 +62,7 @@ const hobbiesCards = [
     icon: <Book className="h-6 w-6 text-white" />,
     shortDesc: "Exploring topics from science to philosophy.",
     longDesc:
-      "I enjoy reading books on physics, engineering, and human behavior, constantly expanding my perspective and applying it to my projects.",
+      "I enjoy reading anything from fiction to non-fiction. I love learning and reading gives me the opportunity to stay curious and keep on exploring. I am currently reading 'Blink' by Malcoml Gladwell. If you have any book reccomondations please contact me ! ",
     bgColor: "bg-cyan-600",
   },
 ];

@@ -142,7 +142,7 @@ className="w-full h-full object-cover transition-transform duration-500 group-ho
               <a
                 href={project.demoUrl}
                 target="_blank"
-                className="flex items-center gap-1 text-primary hover:underline"
+                className="flex justify-center items-center gap-1 text-primary hover:underline"
               >
                 See Project <ExternalLink size={16} />
               </a>
