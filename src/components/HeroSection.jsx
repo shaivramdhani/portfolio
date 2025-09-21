@@ -1,4 +1,6 @@
 import { ArrowDown } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 export const HeroSection = () => {
   return (
@@ -25,9 +27,9 @@ export const HeroSection = () => {
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="/projects" className="cosmic-button">
-              Check out some of my projects !
-            </a>
+            <Link to="/projects" className="cosmic-button">
+           Check out some of my projects !
+        </Link>
           </div>
         </div>
       </div>
