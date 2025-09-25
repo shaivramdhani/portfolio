@@ -26,7 +26,7 @@ export const HeroSection = () => {
             I'm a second year Engineering Physics student at the University of British Columbia. This is my website/portfolio documenting a little bit about me and some cool things that I've worked on. Please look around and feel free to contact me. 
           </p>
 
-          <div className="pt-4 animate-fade-in-delay-4">
+          <div className="pt-4  animate-fade-in-delay-4">
             <Link to="/projects" className="cosmic-button">
             Check out some of my projects!
             </Link>
